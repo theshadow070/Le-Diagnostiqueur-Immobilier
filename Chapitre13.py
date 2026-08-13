@@ -2,32 +2,8 @@ import streamlit as st
 import joblib
 import pandas as pd
 from sklearn.datasets import fetch_california_housing
-"""1. Créez une nouvelle application Streamlit qui charge le modèle sauvegardé du chapitre 10 : modele_immobilier_dakar.pkl
 
-2. Construisez un formulaire permettant à l'utilisateur de renseigner les 8 features attendues par le modèle :
-MedInc
-HouseAge
-AveRooms
-AveBedrms
-Population
-AveOccup
-Latitude
-Longitude
-
-3. Utilisez les valeurs saisies pour créer les données d'entrée du modèle, puis affichez le prix prédit.
-⚠️ Attention : le dataset California Housing exprime la cible en centaines de milliers de dollars. La conversion en FCFA est donc uniquement une conversion illustrative et ne transforme pas cette prédiction en véritable estimation du prix d'un logement à Dakar.
-
-4. Ajoutez @st.cache_resource pour éviter de recharger inutilement le modèle à chaque interaction.
-
-5. Utilisez st.slider pour au moins 3 des 8 features.
-
-6. Créez le fichier requirements.txt contenant les bibliothèques nécessaires à l'application.
-
-7. Testez votre application localement avec : streamlit run app.py
-
-8. Optionnel : déployez votre application sur Streamlit Community Cloud et testez l'URL obtenue.
-"""
-
+st.set_page_config(page_title="Diagnostiqueur Médical", page_icon="🏥", layout="wide")
 st.title("🏠 Le Diagnostiqueur Immobilier")
 st.write("Renseignez les caractéristiques de la maison pour obtenir une estimation du prix.")
 
