@@ -3,7 +3,7 @@ import joblib
 import pandas as pd
 from sklearn.datasets import fetch_california_housing
 
-st.set_page_config(page_title="Diagnostiqueur Médical", page_icon="🏥", layout="wide")
+st.set_page_config(page_title="Diagnostiqueur Immobilier", page_icon="🏠",layout="wide")
 st.title("🏠 Le Diagnostiqueur Immobilier")
 st.write("Renseignez les caractéristiques de la maison pour obtenir une estimation du prix.")
 
